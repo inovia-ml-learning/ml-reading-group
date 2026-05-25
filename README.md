@@ -4,16 +4,12 @@ Inovia's weekly ML Reading Group! Join us for fun, high-level tutorials on the M
 
 ## Website
 
-This repo also hosts a small static site for the reading group, served via **GitHub Pages**.
+This repo also hosts a single-page static site, served via **GitHub Pages**.
 
-- `index.html` — landing page
-- `schedule.html` — upcoming & past sessions
-- `resources.html` — curated papers and primers
-- `assets/css/styles.css` — styling
+- `index.html` — the whole site
+- `assets/css/styles.css` — minimal styling
 
 ### Local preview
-
-Any static file server works. For example:
 
 ```bash
 python3 -m http.server 8000
@@ -24,11 +20,11 @@ Then open <http://localhost:8000>.
 ### Deploying to GitHub Pages
 
 1. Push to `main`.
-2. In the repo settings → **Pages**, set **Source** to `Deploy from a branch`, **Branch** to `main`, and **Folder** to `/ (root)`.
-3. GitHub will publish the site at `https://<owner>.github.io/ml-reading-group/`.
+2. In repo settings → **Pages**, set **Source** to `Deploy from a branch`, **Branch** to `main`, **Folder** to `/ (root)`.
+3. The site will be published at `https://<owner>.github.io/ml-reading-group/`.
 
 A `.nojekyll` file is included so GitHub Pages serves the HTML/CSS as-is without running Jekyll.
 
 ## Contributing
 
-PRs welcome — propose topics for upcoming sessions, add notes/slides under a future `resources/` directory, or improve the site itself.
+PRs welcome — propose topics for upcoming sessions, add session entries to the tables, or improve the site itself.
